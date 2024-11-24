@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script defer src="index.js"></script>
+    <title>Sen Hồng</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <a href="#">
+            <img src="../Image/header.jpg_.webp" alt="Lazada Header">
+        </a>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="#">Mặt hàng <i class="fas fa-sort-down"></i></a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="../Category/category.html?category=hang-tieu-dung">Hàng tiêu dùng</a></li>
+                            <li><a href="../Category/category.html?category=ban-ghe">Bàn ghế</a></li>
+                            <li><a href="../Category/category.html?category=hoa-tuoi">Hoa tươi</a></li>
+                            <li><a href="../Category/category.html?category=giay-dep">Giày dép</a></li>
+                            <li><a href="../Category/category.html?category=do-du-lich">Đồ du lịch</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <input type="text" id="search-bar" placeholder="Tìm kiếm sản phẩm...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </li>
+                <li>
+                    <a href="../Cart/cart.html">
+                        <button id="payment"><i class="fas fa-shopping-cart"></i> Giỏ hàng</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Product List -->
+    <main>
+        <div class="container">
+            <h1>Danh sách sản phẩm</h1>
+            <div class="products"></div> <!-- Sẽ được JavaScript render -->
+        </div>
+    </main>
+</body>
+
+</html>

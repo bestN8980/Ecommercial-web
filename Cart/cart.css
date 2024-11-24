@@ -1,0 +1,201 @@
+/* Tổng thể */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Tiêu đề */
+h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+    text-transform: uppercase;
+}
+
+/* Danh sách sản phẩm trong giỏ */
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#cart-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+#cart-items li:hover {
+    background-color: #f9f9f9;
+}
+
+#cart-items li:last-child {
+    border-bottom: none;
+}
+
+#cart-items img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    margin-right: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#cart-items .item-info {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+#cart-items .item-info h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+#cart-items .item-info p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #777;
+}
+
+#cart-items .item-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Tổng tiền */
+#cart-total {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    margin: 20px 0;
+    color: #333;
+}
+
+/* Nút xóa giỏ hàng */
+#clear-cart {
+    display: block;
+    padding: 12px 20px;
+    background-color: #d9534f;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 20px auto 0;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#clear-cart:hover {
+    background-color: #c9302c;
+    transform: scale(1.05);
+}
+
+#clear-cart:active {
+    transform: scale(1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #cart-items li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #cart-items img {
+        margin-bottom: 10px;
+    }
+
+    #cart-items .item-price {
+        margin-top: 10px;
+    }
+}
+
+/* Form Thanh Toán */
+#checkout-form {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+#checkout-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#checkout-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+#checkout-form input, 
+#checkout-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#checkout-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#checkout-form button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+#checkout-form button:active {
+    transform: scale(1);
+}
